@@ -1,0 +1,50 @@
+Reference som skal påføres faktura:
+ 
+Leverandør	Ydelse	Reference
+Helle-Broe's Mooring Aps	Mooring/Unmooring	62916003
+DanPilot	Pilotage Inbound 	62916004
+Svitzer	Towage Inbound x 2 tugs	62916005
+ 
+ 
+Se faktura information i bunden af denne email:
+ 
+IMO	9636888
+Call sign	IBCX
+DWT	26.780 mts
+GT	133.019 mts
+LOA	306 m
+Beam	37,2 m
+Max. draft	8,5 m
+ 
+ETA	14.09.2024 08:42
+ETB	14.09.2024 10:00
+ETD	14.09.2024 18:00
+Havn	Copenhagen
+Kaj	Berth 331
+Lods ind	p/s Middelgrund
+Tugs ind	x 2 tugs p/s Middelgrund
+ 	 
+ 
+Att.: Svitzer 
+Operatøren er Costa Crociere S.A.
+ 
+Costa Crociere S.A.
+c/o SDK Cruise - Copenhagen
+Dampfærgevej 32
+2100 Copenhagen Ø
+VAT: IT02545900108
+ 
+Vi holder jer informeret.
+ 
+ 
+ 
+Med venlig hilsen / Best regards 
+ 
+SDK Cruise A/S
+
+Carina Johansen
+
+ 
+SDK Cruise - Copenhagen | Dampfærgevej 32 | 2100 Copenhagen Ø | Denmark
+Tel.: +45 3344 1710 (24 hr service)
+E-mail: denmark@sdkcruise.com

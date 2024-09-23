@@ -1,0 +1,8 @@
+
+
+{
+"scripts": {
+    "tailwind": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./Styles/input.css -o ./wwwroot/css/output.css --watch"
+}
+
+}

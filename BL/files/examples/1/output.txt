@@ -1,0 +1,32 @@
+{
+  "vessel": {
+    "name": null,
+    "callSign": "IBCX",
+    "imoNumber": "9636888",
+    "grossTonnage": 133019,
+    "length": 306,
+    "width": 37.2,
+    "draught": 8.5,
+    "speed": {
+        "value": null,
+      "rpm": null
+    }
+},
+  "cargo": null,
+  "pilotage": {
+    "eta": "2024-09-14T08:42:00Z",
+    "departureTime": "2024-09-14T18:00:00Z",
+    "embarkationPoint": "p/s Middelgrund",
+    "disembarkationPoint": null
+  },
+  "faultsOrDeficiencies": null,
+  "contactDetails": {
+    "name": "Carina Johansen",
+    "company": "SDK Cruise A/S",
+    "email": "denmark@sdkcruise.com",
+    "phone": "+45 3344 1710"
+  },
+  "paymentInfo": null,
+  "additionalInfo": null,
+  "helcomNotificationRequired": null
+}

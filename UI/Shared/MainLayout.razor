@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase;
+@implements IComponent;
+@using static Shared.NavMenu;
+
+<PageTitle>Menu</PageTitle>
+
+<div class="d-flex">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <LoginDisplay />
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
