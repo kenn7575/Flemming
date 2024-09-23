@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title></title>
+</head>
+<body>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">Good day - Update 16.09.2024 at 09:25 Hrs lt</span><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">
+</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 8pt 0pt;"><span style="color:#000000;background-color:#FFFF00;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">INVOICE REF TO BE STATED ON ALL INVOICES: 125461
+</span></p>
+<table border="0" cellspacing="0" cellpadding="0" width="642" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Vessel
+</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">IMO</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Gross tonnage
+</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">LOA</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">BEAM</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Draft in/out</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">M/T Astral
+</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">9371878</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">7 636</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">129,75</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">19,6</span></p>
+</td>
+<td valign="top" style="width:75.15pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">8,00/6,00</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:bold;font-style:normal;">&nbsp;</span></p>
+<table border="0" cellspacing="0" cellpadding="0" width="482" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="width:67.3pt;padding:0pt 0pt 0pt 0pt;background-color:#98CDF8;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Action</span></p>
+</td>
+<td style="width:133.1pt;padding:0pt 0pt 0pt 0pt;background-color:#98CDF8;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Terminal</span></p>
+</td>
+<td style="width:156.15pt;padding:0pt 0pt 0pt 0pt;background-color:#98CDF8;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Quay
+</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:67.3pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Discharging</span></p>
+</td>
+<td style="width:133.1pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Kalundborg Refinery</span></p>
+</td>
+<td style="width:156.15pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Pier A/B</span></p>
+</td>
+</tr>
+<tr>
+<td style="width:67.3pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Discharging</span></p>
+</td>
+<td style="width:133.1pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Kalundborg Refinery</span></p>
+</td>
+<td style="width:156.15pt;padding:0pt 0pt 0pt 0pt;border-top:1pt #808080 solid;border-right:1pt #808080 solid;border-bottom:1pt #808080 solid;border-left:1pt #808080 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Pier A/B</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 8pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<table border="0" cellspacing="0" cellpadding="0" width="643" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="width:476.7pt;padding:0pt 1.8pt 0pt 1.8pt;background-color:#98CDF8;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;background-color:#98CDF8;">
+<span style="color:#000000;background-color:#98CDF8;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Services requested
+</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;display:none;">&nbsp;</span></p>
+<table border="0" cellspacing="0" cellpadding="0" width="642" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Pilot in</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">L/B 21
+</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Pilot out</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">L/B 21 ?
+</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Master PEC nr if applicable)</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:12pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Linesmen</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">In/Out
+</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Towage in</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">-
+</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Towage out</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">-
+</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:127.2pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Remarks</span></p>
+</td>
+<td valign="top" style="width:343.65pt;padding:0pt 1.8pt 0pt 1.8pt;border-top:1pt #000000 solid;border-right:1pt #000000 solid;border-bottom:1pt #000000 solid;border-left:1pt #000000 solid;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">Tentative prospects AWG/WP.
+</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">19.09.2024 AM ETA Pilot station</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:transparent;font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">Prospects pending - reverting soonest</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">++</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">20.09.2024 Expect departure (TBC)</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:bold;font-style:normal;">ALL SUPPLIERS INVOICES MUST BE SENT TO INV.SCHULTZ@SCHULTZGROUP.EU IN
+ PDF FORMAT, INVOICE REF TO BE CLEARLY STATED ON ALL INVOICES - <br>
+<br>
+INVOICES NOT MEETING ABOVE REQUIREMENTS MIGHT BE LOST/REJECTED. </span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Arial;font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 8pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">Keeping all parties involved informed accordingly.</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">Thanks
+</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:transparent;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:transparent;font-family:'Courier New';font-size:10pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 8pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:bold;font-style:normal;">Kind regards
+<br>
+Jonas Krøll</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#002060;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:bold;font-style:normal;">Schultz Shipping Group</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:italic;">As agents only</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="width:61.95pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">Office phone</span></p>
+</td>
+<td valign="top" style="width:150.7pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">+45 59 57 85 00 (24/7 duty line)</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:61.95pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">Direct phone</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">Email</span></p>
+</td>
+<td valign="top" style="width:150.7pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">+45 59 57 85 00
+</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:normal;font-style:normal;"><a href="mailto:kalundborg@schultzshipping.dk" style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;"><span style="color:#0000FF;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;text-decoration: underline;">kalundborg@schultzshipping.dk</span></a></span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="width:61.95pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">Homepage</span></p>
+</td>
+<td valign="top" style="width:150.7pt;padding:0pt 5.4pt 0pt 0pt;border-top:none;border-right:none;border-bottom:none;border-left:none;">
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:normal;font-style:normal;"><a href="https://schultzgroup.eu/" style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;"><span style="color:#0000FF;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;text-decoration: underline;">www.schultzgroup.eu/</span></a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 8pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">&nbsp;</span></p>
+<p style="text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt;"><span style="color:#000000;background-color:#FFFFFF;font-family:Calibri;font-size:8pt;font-weight:normal;font-style:normal;">Office opening hrs. Monday-Friday 8:00 AM- 4:30 PM. For urgent matters
+ outside of office hours, please do not hesitate to contact our 24/7 duty line. </span>
+</p>
+</body>
+</html>

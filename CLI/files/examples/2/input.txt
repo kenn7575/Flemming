@@ -1,0 +1,50 @@
+Reference som skal påføres faktura:
+Ydelse	Reference
+Pilotage Fredericia Roads / jetty 41	94958003
+Pilotage jetty 41 / Fredericia Roads	94958004
+Mooring/Unmooring	94958005
+ 
+IMO	9310317
+Call sign	OXVC
+DWT	4.490
+GT	2.947
+LOA	87,82 m
+Beam	13,39 m
+Max. draft	6,77 m
+Arrival draft	4,8 m
+Departure draft	6,5 m
+ 
+ETA to P/S	15.09.2024 - LPM
+ETB	v/ankomst
+ETD	16.09.2024 AM
+Havn	Fredericia
+Kaj	Jetty 1 - Berth 41
+Lods ind fra	Fredericia Roads
+Lods ud til	Fredericia Roads
+Slæbebåd ind	0
+Slæbebåd ud	0
+ 
+Bemærkninger
+
+Faktura udstedes til:
+Sirius Chartering AB
+c/o SDK Shipping A/S - Fredericia
+Oceankajen 12
+7000 Frederica
+Lok.: 1112
+VAT: SE556644317101
+ 
+Vi holder jer informeret.
+ 
+Med venlig hilsen / Best regards 
+ 
+ 
+SDK Shipping A/S
+Arly Fynby
+ 
+
+ 
+ 
+SDK Shipping A/S - Fredericia | Oceankajen 12 | 7000 Frederica | Denmark
+Tel.: +45 7620 6000 (24 hr service)
+Mail: fredericia@sdkgroup.com
