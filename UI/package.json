@@ -1,8 +1,14 @@
-
-
 {
-"scripts": {
-    "tailwind": "cross-env NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./Styles/input.css -o ./wwwroot/css/output.css --watch"
-}
-
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "For tailwind support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenni¨",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.12.10"
+  }
 }

@@ -16,4 +16,7 @@
     <PackageReference Include="Microsoft.Identity.Web.DownstreamApi" Version="3.1.0" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="3.1.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="daisyui\" />
+  </ItemGroup>
 </Project>
