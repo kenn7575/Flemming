@@ -92,7 +92,7 @@ class Program
 
 
         //get emails
-        List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(3);
+        List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(2);
 
 
        
