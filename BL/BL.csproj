@@ -8,31 +8,35 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.12.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.66" />
     <PackageReference Include="MailKit" Version="4.7.1.1" />
     <PackageReference Include="Microsoft.Graph" Version="5.58.0" />
     <PackageReference Include="OpenAI" Version="1.11.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="files\examples\1\input.txt">
+    <None Update="files\categorizer\promtInstructions.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="files\pilotage_request\examples\1\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\examples\1\output.txt">
+    <None Update="files\pilotage_request\examples\1\output.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\examples\2\input.txt">
+    <None Update="files\pilotage_request\examples\2\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\examples\2\output.txt">
+    <None Update="files\pilotage_request\examples\2\output.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\examples\3\input.txt">
+    <None Update="files\pilotage_request\examples\3\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\examples\3\output.txt">
+    <None Update="files\pilotage_request\examples\3\output.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="files\promtInstructions.txt">
+    <None Update="files\pilotage_request\promtInstructions.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
