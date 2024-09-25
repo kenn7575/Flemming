@@ -43,57 +43,65 @@ namespace BL
         {
             var graphClient = GetGraphClient();
 
-            // Step 1: Fetch the initial messages
-            var messages = await graphClient.Users["OperationMailFlow-Test@danpilot.dk"].Messages
-            .GetAsync((requestConfiguration) =>
-            {
-                // Set request headers
-                requestConfiguration.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
-                requestConfiguration.QueryParameters.Top = top;
 
-                // Fetch only the conversationId for each message
-                requestConfiguration.QueryParameters.Select = new string[] { "conversationId" };
-            });
+            // Step 1: Fetch top messages from the Inbox
+            var inboxMessages = await graphClient.Users["OperationMailFlow-Test@danpilot.dk"].MailFolders["inbox"].Messages
+                .GetAsync((requestConfiguration) =>
+                {
+                    requestConfiguration.Headers.Add("Prefer", "outlook.body-content-type=\"text\"");
+                    requestConfiguration.QueryParameters.Top = top;
+                    requestConfiguration.QueryParameters.Select = new string[] { "conversationId", "subject", "receivedDateTime", "from", "toRecipients", "ccRecipients", "id" };
+                });
 
             List<Conversation> conversations = new();
 
-            // Step 2: For each message, fetch the entire conversation
-            if (messages.Value.Count > 0)
+            // Step 2: For each message, get its conversation and add only relevant replies
+            foreach (var message in inboxMessages.Value)
             {
-                foreach (var message in messages.Value)
-                {
-                    // Get the conversationId for the current message (not always the first one)
-                    var conversationId = message.ConversationId;
+                // Create a new conversation object for the current message's thread
+                var conversationId = message.ConversationId;
+                Conversation conversation = new();
 
-                    // Create a new conversation object for each thread
-                    Conversation conversation = new();
-
-                    // Step 3: Fetch all messages in the conversation
-                    var conversationMessages = await graphClient.Users["OperationMailFlow-Test@danpilot.dk"].Messages
-                        .GetAsync((requestConfiguration) =>
-                        {
-                            requestConfiguration.QueryParameters.Select = new string[] { "subject", "bodyPreview", "body", "from", "toRecipients", "receivedDateTime","ccRecipients", "sentDateTime", "replyTo",   "id" };
-                            requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
-                            requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
-                        });
-
-                    // Step 4: Add all messages in the conversation to the current conversation object
-                    foreach (var conversationMessage in conversationMessages.Value)
+                // Step 3: Fetch all messages in the conversation (thread) from the Inbox
+                var threadMessages = await graphClient.Users["OperationMailFlow-Test@danpilot.dk"].Messages
+                    .GetAsync((requestConfiguration) =>
                     {
-                      
-                            Email email = new(conversationMessage);
-                            email.cleanBody();
-                            conversation.AddEmail(email);
-                       
-                    }
+                        requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
+                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "receivedDateTime", "id" };
+                    });
 
-                    // Add the populated conversation to the list
-                    conversations.Add(conversation);
+                // Step 4: Add inbox messages to the conversation
+                foreach (var threadMessage in threadMessages.Value)
+                {
+                    Email email = new(threadMessage);
+                    email.cleanBody();
+                    conversation.AddEmail(email);
                 }
+
+                // Step 5: Fetch related sent messages and add them to the same conversation
+                var sentMessages = await graphClient.Users["OperationMailFlow-Test@danpilot.dk"].MailFolders["sentitems"].Messages
+                    .GetAsync((requestConfiguration) =>
+                    {
+                        requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
+                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "sentDateTime", "id" };
+                    });
+
+                // Step 6: Add sent messages to the conversation
+                foreach (var sentMessage in sentMessages.Value)
+                {
+                    Email email = new(sentMessage);
+                    email.cleanBody();
+                    conversation.AddEmail(email);
+                }
+
+                // Add the conversation to the list
+                conversations.Add(conversation);
             }
 
             return conversations;
         }
+
+
 
 
 
