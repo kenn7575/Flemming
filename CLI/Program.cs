@@ -1,4 +1,5 @@
 ﻿
+using DA;
 using BL;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +27,7 @@ class Program
             {
                 // Register IConfiguration as a service
                 services.AddSingleton(context.Configuration);
-               
+
             })
             .ConfigureLogging(logging =>
             {
@@ -36,7 +37,7 @@ class Program
             .Build();
 
 
-     
+
 
         // Now you can retrieve the IConfiguration from the built host's service provider
         var configuration = host.Services.GetRequiredService<IConfiguration>();
@@ -87,25 +88,25 @@ class Program
         Console.WriteLine($"Azure AD Client ID: {azureAdConfig.ClientId}");
         Console.WriteLine($"Azure AD Client Secret: (hidden for security)");
 
-     
-      
+
+
 
 
         //get emails
-        List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(2);
+        //List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(2);
 
 
-       
 
 
-        //convert emails to json and save to file
-        JsonSerializerOptions options = new JsonSerializerOptions
-        {
-            WriteIndented = true
-        };
-        var conversationsJSON = JsonSerializer.Serialize(Conversations);
-        string currentTime = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
-        FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\{currentTime}.json", conversationsJSON);
+
+        ////convert emails to json and save to file
+        //JsonSerializerOptions options = new JsonSerializerOptions
+        //{
+        //    WriteIndented = true
+        //};
+        //var conversationsJSON = JsonSerializer.Serialize(Conversations);
+        //string currentTime = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+        //FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\{currentTime}.json", conversationsJSON);
 
 
         //categorize emails
@@ -169,9 +170,32 @@ class Program
         //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\statement_of_truth\\{subject}.json", JsonSerializer.Serialize(ce));
         //            break;
         //    }
-            
+
 
         //}
+
+
+        using (var context = new MailContext())
+        {
+            var newEmail = new BL.CategorizedEmail
+            {
+                From = "kenn7575@gmail.com",
+                Subject = "I wanna pilot now",
+                Body = "Time, place, bla bla bla",
+                SentDateTime = new DateTime(2021, 10, 10),
+                ConversationId = "hadshadhgadhakdhgakdhgkajdgd",
+                BodyContentType = BodyType.Html,
+                ReplyTo = null,
+                CategoryId = 1,
+            };
+            context.CategorizedEmails.Add(newEmail);
+            context.SaveChanges();
+        }
+
+
+
+
+
         Console.ReadKey();
     }
 }

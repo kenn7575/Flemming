@@ -2,6 +2,8 @@
 using OpenAI_API.Moderation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -11,6 +13,7 @@ namespace BL
 {
     public class CategorizedEmail : Email
     {
+        [NotMapped]
         public string CategoryName { get; set; }
         public int CategoryId { get; set; }
 
@@ -24,6 +27,9 @@ namespace BL
             CategoryName = cer.CategoryName;
             CategoryId = cer.CategoryId;
         }
+        public CategorizedEmail() 
+        {
+            
+        }
     }
-
 }
