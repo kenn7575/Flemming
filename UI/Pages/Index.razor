@@ -3,6 +3,9 @@
 @using System.Text.Json
 @inject IDownstreamApi downstreamApi
 @inject MicrosoftIdentityConsentAndConditionalAccessHandler ConsentHandler
+@using DA;
+@using BL;
+
 
 @page "/"
 
@@ -12,39 +15,48 @@
 <UI.Components.Table />
 
 @* <AuthorizeView>
-<Authorized>
-@if (graphApiResponse != null)
-{
-<p>Before rendering the page, the controller was able to make a call to
-Microsoft Graph's <code>/me</code> API for your user and received the
-following:</p>
+    <Authorized>
+        Authorized
+        @if (pilotageEmail != null)
+        {
+            @foreach (var email in pilotageEmail)
+            {
+                <p>@email.Subject - @email.From</p>
+            }
 
-<p>
-<pre><code class="language-js">@JsonSerializer.Serialize(graphApiResponse, new JsonSerializerOptions { WriteIndented =
-true })</code></pre>
-</p>
+        }
+        }
+        }
 
-<p>Refreshing this page will continue to use the cached access token acquired for Microsoft Graph, which is valid
-for future page views will attempt to refresh this token as it nears its expiration.</p>
-}
+        @code {
+        private List<PilotageEmail> pilotageEmail = null;
 
-@code {
-private JsonDocument graphApiResponse = null;
+        protected override async Task OnInitializedAsync()
+        {
+            try
+            {
+                // using var response = await downstreamApi.CallApiForUserAsync("GraphApi").ConfigureAwait(false);
+                // response.EnsureSuccessStatusCode();
+                // graphApiResponse = await response.Content.ReadFromJsonAsync<JsonDocument>().ConfigureAwait(false);
 
-protected override async Task OnInitializedAsync()
-{
-try
-{
-using var response = await downstreamApi.CallApiForUserAsync("GraphApi").ConfigureAwait(false);
-response.EnsureSuccessStatusCode();
-graphApiResponse = await response.Content.ReadFromJsonAsync<JsonDocument>().ConfigureAwait(false);
-}
-catch (Exception ex)
-{
-ConsentHandler.HandleException(ex);
-}
-}
-}
-</Authorized>
+                using (var context = new MailContext())
+                {
+
+                    pilotageEmail = context.PilotageEmails.ToList();
+                    Console.WriteLine($"{pilotageEmail.Count} emails");
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ConsentHandler.HandleException(ex);
+            }
+        }
+        }
+    </Authorized>
+    <NotAuthorized>
+        NotAuthorized
+    </NotAuthorized>
 </AuthorizeView>
-*@
+ *@

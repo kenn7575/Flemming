@@ -31,9 +31,16 @@ namespace BL
 
             //convert the list of email addresses to a list of strings
             ReplyTo = new List<string>();
-            foreach (Recipient email in message.ReplyTo)
+            if (message.ReplyTo != null)
             {
-                ReplyTo.Add(email.EmailAddress.Address);
+                foreach (Recipient email in message.ReplyTo)
+                {
+                    string? address = email.EmailAddress.Address;
+                    if (address != null)
+                    { 
+                        ReplyTo.Add(address);
+                    }
+                }
             }
         }
         public Email(Email message)
@@ -48,7 +55,7 @@ namespace BL
         }
         public Email()
         {
-           
+
         }
         public void cleanBody()
         {

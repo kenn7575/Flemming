@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using static Microsoft.Graph.CoreConstants;
 
 namespace BL
 {
@@ -31,5 +32,38 @@ namespace BL
         {
             
         }
+
+
+        public enum EmailCategories
+        {
+            None,
+            NewPilotageRequests,
+            VesselArrivalDepartureUpdates,
+            CargoOperations,
+            InvoiceAndBillingInformation,
+            OrderCancellations,
+            OrderModifications,
+            CommercialAndSalesInquiries,
+            SpamAndAds,
+            Miscellaneous,
+            StatementOfTruth
+        }
+       
+        public enum EmailCategoriesDisplay
+        {
+            Ingen,
+            Nye_Lodsanmodning,
+            Tidspdatering,
+            Lastoperation,
+            Faktureringsinformation,
+            Ordreaflysning,
+            Ordreredigering,
+            Kommercielle_og_Salgsmæssige_Forespørgsl,
+            Spam,
+            Diverse,
+            Sandhedserklæring
+        }
+
+
     }
 }

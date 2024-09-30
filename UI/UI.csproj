@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="package.json" />
+    <None Include="wwwroot\css\Site.css" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.12.0" />
@@ -18,5 +19,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="daisyui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj" />
+    <ProjectReference Include="..\DA\DA.csproj" />
   </ItemGroup>
 </Project>

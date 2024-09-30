@@ -11,11 +11,17 @@ namespace BL.OpenAI
         public string CategoryName { get; set; }
         public int CategoryId { get; set; }
 
+        public CategorizeEmailResponse() { }
         public CategorizeEmailResponse(string jsonRes)
         {
             try
             {
-                CategorizeEmailResponse cer = JsonSerializer.Deserialize<CategorizeEmailResponse>(jsonRes);
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true, // Enable case-insensitive property names
+                    IncludeFields = true
+                };
+                CategorizeEmailResponse? cer = JsonSerializer.Deserialize<CategorizeEmailResponse>(jsonRes, options);
 
                 if (cer == null)
                 {

@@ -12,6 +12,7 @@ namespace DA
         => options.UseSqlServer("Server=PC5577;Database=Flemming;Trusted_Connection=True;TrustServerCertificate=True");
 
         public DbSet<CategorizedEmail> CategorizedEmails { get; set; }
+        public DbSet<PilotageEmail> PilotageEmails { get; set; }
     }
 }
 
@@ -19,4 +20,3 @@ namespace DA
 
 
 
-//Server=your_server_name;Database=your_database_name;Trusted_Connection=True;

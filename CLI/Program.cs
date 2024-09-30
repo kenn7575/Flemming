@@ -89,108 +89,140 @@ class Program
         Console.WriteLine($"Azure AD Client Secret: (hidden for security)");
 
 
-
-
-
+        Console.WriteLine("Henter emails \n");
         //get emails
-        //List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(2);
+        List<BL.Conversation> Conversations = await GraphEmailService.FetchEmails(1);
 
-
-
-
-
-        ////convert emails to json and save to file
-        //JsonSerializerOptions options = new JsonSerializerOptions
-        //{
-        //    WriteIndented = true
-        //};
-        //var conversationsJSON = JsonSerializer.Serialize(Conversations);
-        //string currentTime = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
-        //FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\{currentTime}.json", conversationsJSON);
+        //convert emails to json and save to file
+        JsonSerializerOptions options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+        var conversationsJSON = JsonSerializer.Serialize(Conversations);
+        string currentTime = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+        FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\{currentTime}.json", conversationsJSON);
 
 
         //categorize emails
 
-        //var OpenAI = OpenAi.GetInstance(Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
-        //var CategorizedEmails = new  List<CategorizedEmail>();
-        //foreach (var email in emails.Value)
-        //{
-        //    CategorizedEmail ce = await OpenAI.CategorizeEmail(email.Body.Content, email.Subject, email.From.EmailAddress.Address);
-        //    ce.Body = email.Body.Content;
-        //    ce.Subject = email.Subject;
-        //    ce.From = email.From.EmailAddress.Address;
-
-
-        //    var emailJson = new
-        //    {
-        //        category = ce.CategoryName,
-        //        body = ce.Body,
-        //        subject = ce.Subject,
-        //        from = ce.From
-        //    };
-
-        //    Console.WriteLine($"{ce.Subject} is predicted to be of type {ce.CategoryName}");
-
-        //    //remove "/" from subject
-        //    var subject = ce.Subject.Replace("/", "-");
-        //    //save to files
-        //    switch (ce.CategoryId)
-        //    {
-        //        case 1:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\pilotage_request\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 2:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\vessel_arrival_or_departure_notifications\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 3:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\cargo_operations\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 4:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\invoice_and_billing_information\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 5:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\order_cancellations\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 6:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\order_modifications\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 7:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\commercialand_sales_inquiries\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 8:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\spam_and_ads\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 9:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\miscellaneous\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        case 10:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\miscellaneous\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //        default:
-        //            FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\statement_of_truth\\{subject}.json", JsonSerializer.Serialize(ce));
-        //            break;
-        //    }
-
-
-        //}
-
-
-        using (var context = new MailContext())
+        var OpenAI = OpenAi.GetInstance(Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
+        var CategorizedEmails = new List<CategorizedEmail>();
+        int index = 0;
+        foreach (var conversation in Conversations)
         {
-            var newEmail = new BL.CategorizedEmail
+            
+            index++;
+            Console.WriteLine($"Kategorisere email nr. {index}. \n");
+
+            CategorizedConversation cc = await OpenAI.CategorizeEmail(conversation);
+
+            
+            CategorizedEmail categorizedEmail = new CategorizedEmail();
+            if (cc != null && cc.Messages?.Count > 0) { 
+            categorizedEmail.Body = cc.Messages[0].Body;
+                categorizedEmail.CategoryId = cc.CategoryId;
+                categorizedEmail.CategoryName = cc.CategoryName;
+                categorizedEmail.ConversationId = cc.Messages[0].ConversationId;
+                categorizedEmail.From = cc.Messages[0].From;
+                categorizedEmail.ReplyTo = cc.Messages[0].ReplyTo;
+                categorizedEmail.SentDateTime = cc.Messages[0].SentDateTime;
+                categorizedEmail.Subject = cc.Messages[0].Subject;
+                categorizedEmail.BodyContentType = cc.Messages[0].BodyContentType;
+            }
+
+            Console.WriteLine($"Email nr. {index} af kategorien {categorizedEmail.CategoryName}.  \n");
+
+
+            var emailJson = new
             {
-                From = "kenn7575@gmail.com",
-                Subject = "I wanna pilot now",
-                Body = "Time, place, bla bla bla",
-                SentDateTime = new DateTime(2021, 10, 10),
-                ConversationId = "hadshadhgadhakdhgakdhgkajdgd",
-                BodyContentType = BodyType.Html,
-                ReplyTo = null,
-                CategoryId = 1,
+                category = categorizedEmail.CategoryName,
+                body = categorizedEmail.Body,
+                subject = categorizedEmail.Subject,
+                from = categorizedEmail.From
             };
-            context.CategorizedEmails.Add(newEmail);
-            context.SaveChanges();
+
+            
+
+            //remove "/" from subject
+            var subject = categorizedEmail.Subject.Replace("/", "-");
+            //save to files
+            switch (categorizedEmail.CategoryId)
+            {
+                case 1:
+                    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\pilotage_request\\{currentTime}.json", JsonSerializer.Serialize(categorizedEmail));
+                    Console.WriteLine($"Starter dataudtræk af {categorizedEmail.CategoryName} email...  \n");
+
+                    PilotageInfo pilotageInfo =  await OpenAI.AnalyzePilotageReq(categorizedEmail.Body);
+                    Console.WriteLine($"færdig!  \n");
+                    Console.WriteLine($"Gemmer email i database...");
+
+                    using (var context = new MailContext())
+                    {
+                        var newEmail = new PilotageEmail
+                        {
+                            From = categorizedEmail.From,
+                            Subject = categorizedEmail.Subject,
+                            Body = categorizedEmail.Body,
+                            SentDateTime = categorizedEmail.SentDateTime,
+                            ConversationId = categorizedEmail.ConversationId,
+                            BodyContentType = categorizedEmail.BodyContentType,
+                            ReplyTo = categorizedEmail.ReplyTo,
+                            CategoryId = categorizedEmail.CategoryId,
+                            PilotageInfo = pilotageInfo
+                        };
+                        context.PilotageEmails.Add(newEmail);
+                        context.SaveChanges();
+                    }
+                    Console.WriteLine($"Email gemt i database!  \n");
+
+                   
+                    Console.WriteLine($"Du kan også finde emailen i mappen: C:\\Users\\kko\\Downloads\\emails\\pilotage_request\\{currentTime}.json");
+                    break;
+                //case 2:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\vessel_arrival_or_departure_notifications\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 3:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\cargo_operations\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 4:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\invoice_and_billing_information\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 5:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\order_cancellations\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 6:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\order_modifications\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 7:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\commercialand_sales_inquiries\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 8:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\spam_and_ads\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 9:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\miscellaneous\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                //case 10:
+                //    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\miscellaneous\\{subject}.json", JsonSerializer.Serialize(ce));
+                //    break;
+                default:
+                    FileManager.SaveJson($"C:\\Users\\kko\\Downloads\\emails\\miscellaneous\\{currentTime}.json", JsonSerializer.Serialize(categorizedEmail));
+                    using (var context = new MailContext())
+                    {
+                        context.CategorizedEmails.Add(categorizedEmail);
+                        context.SaveChanges();
+                    }
+                    break;
+            }
+
+
+            //Console.WriteLine($"Venter 60 sekunder...  \n");
+            ////sleep for 1 sec to avoid rate limit
+            //Thread.Sleep(60000);
         }
+
+
+       
 
 
 

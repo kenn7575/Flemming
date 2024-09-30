@@ -67,7 +67,7 @@ namespace BL
                     .GetAsync((requestConfiguration) =>
                     {
                         requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
-                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "receivedDateTime", "id" };
+                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "sentDateTime", "id", "conversationId" };
                     });
 
                 // Step 4: Add inbox messages to the conversation
@@ -83,7 +83,7 @@ namespace BL
                     .GetAsync((requestConfiguration) =>
                     {
                         requestConfiguration.QueryParameters.Filter = $"conversationId eq '{conversationId}'";
-                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "sentDateTime", "id" };
+                        requestConfiguration.QueryParameters.Select = new string[] { "subject", "body", "from", "toRecipients", "ccRecipients", "sentDateTime", "id", "conversationId", "" };
                     });
 
                 // Step 6: Add sent messages to the conversation

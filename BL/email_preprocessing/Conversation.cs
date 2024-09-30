@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BL.OpenAI;
+using OpenAI_API.Moderation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +27,10 @@ namespace BL
             _messages = new List<Email>();
         }
 
+        public Conversation(Conversation conversation)
+        {
+           this._messages = new List<Email>(conversation.Messages);
+        }
         public Conversation(List<Email> messages)
         {
             _messages = new List<Email>(messages);
@@ -59,5 +65,25 @@ namespace BL
                 .ToList();
         }
     }
+    public class CategorizedConversation : Conversation
+    {
+      
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
 
+        public CategorizedConversation(Conversation conversation, int categoryId) : base(conversation)
+        {
+            categoryId = CategoryId;
+        }
+        public CategorizedConversation(Conversation conversation, CategorizeEmailResponse category) : base(conversation)
+        {
+            CategoryId = category.CategoryId;
+            CategoryName = category.CategoryName;
+        }
+        public void testc()
+        {
+            var test = new Conversation();
+          
+        }
+    }
 }

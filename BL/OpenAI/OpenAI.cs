@@ -54,7 +54,7 @@ namespace BL
             chat.AppendUserInput(rawEmail);
             // and get the response
             string response = await chat.GetResponseFromChatbotAsync();
-            Console.WriteLine(response);
+           
 
 
 
@@ -66,11 +66,11 @@ namespace BL
 
             return pilotageInfo;
         }
-        public async Task<CategorizedEmail> CategorizeEmail(Email email)
+        public async Task<CategorizedConversation> CategorizeEmail(Conversation conversation)
         {
             //create a chat conversation
             var chat = api.Chat.CreateConversation();
-            chat.Model = Model.GPT4_Turbo;
+            chat.Model = Model.GPT4;
 
             chat.RequestParameters.Temperature = 0;
 
@@ -84,12 +84,7 @@ namespace BL
 
             // now let's ask it a question
             //make json object
-            var input = new
-            {
-                body = email.Body,
-                subject = email.Subject,
-                from = email.From
-            };
+            var input = JsonSerializer.Serialize(conversation);
 
             chat.AppendUserInput(JsonSerializer.Serialize(input));
             // and get the response
@@ -99,12 +94,12 @@ namespace BL
 
 
 
-            CategorizedEmail categorizedEmail = new CategorizedEmail(email, category);
+            CategorizedConversation categorizedConversation = new CategorizedConversation(conversation, category);
 
 
 
 
-            return categorizedEmail;
+            return categorizedConversation;
         }
     }
 }
